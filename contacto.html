@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clinica Gamarra Mendoza</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a href="index.html">#ClinicaGamarraMendoza</a>
+        </div>
+        <button class="navbar-toggle"><i class="fas fa-bars"></i></button>
+        <ul class="navbar-menu">
+          <li><a class="navbar-link" href="servicios.html">Servicios</a></li>
+          <li>
+            <a class="navbar-link" href="servicios.html#staff"
+              >Cartilla Medica</a
+            >
+          </li>
+          <li><a class="navbar-link" href="planes.html">Planes</a></li>
+          <li>
+            <a class="navbar-link" href="planes.html#cobertura">Cobertura</a>
+          </li>
+          <li>
+            <a class="navbar-link =" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="h1">Clínica Gamarra Mendoza</h1>
+      <section class="container contacto">
+        <h2 class="titulo">Contacto</h2>
+        <h3 class="titulo">Nos gusta saber de vos</h3>
+        <div class="flex">
+          <div class="formulario">
+            <form onsubmit="this.reset(); return false;">
+              <div class="input-group">
+                <input type="text" placeholder="Tu nombre" />
+              </div>
+              <div class="input-group">
+                <input type="email" placeholder="email" />
+              </div>
+              <div class="input-group">
+                <input type="text" placeholder="Telefono (0xx 15 xxxxxxxx)" />
+              </div>
+              <div class="input-group">
+                <textarea rows="10"></textarea>
+              </div>
+              <button>Enviar</button>
+            </form>
+          </div>
+          <div class="tel-email">
+            <div class="telefonos">
+              <h3>Telefonos</h3>
+              <span>Emergencias: 02245 440000</span>
+              <span>Quiero Asociarme: 02245 440001</span>
+              <span>Turnos: 02245 440003</span>
+              <span>Logistica y traslados: 02245 440001</span>
+            </div>
+            <div class="email">
+              <h3>Correo Electronico</h3>
+              <span>Consultas: info@cgm.org.ar</span>
+              <span>Provedores: provedores@cgm.org.ar</span>
+              <span>Traslados: traslados@cgm.org.ar</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mapa">
+          <h3>Dirección</h3>
+          <p>
+            Visitanos en Av 25 de Mayo 555. <br />
+            Castelli (7114). <br />
+            Buenos Aires - Argentina.
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6448.208872246342!2d-57.80782728435249!3d-36.090942130800876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9599ae38b0600e3b%3A0x76be238779a796a3!2sAv.%2025%20de%20Mayo%20555%2C%20Castelli%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1637102195769!5m2!1ses-419!2sar"
+            width="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h4>#ClinicaGamarraMendoza &copy;Nacho Balo</h4>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

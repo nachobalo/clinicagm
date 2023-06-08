@@ -1,0 +1,526 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+:root {
+  --dark: #00001f;
+  --white: #fff;
+  --grey: #ccc;
+  --royal-blue-dark: #00296b;
+  --dark-cornflower-blue: #003f88;
+  --usafa-blue: #00509d;
+  --mikado-yellow: #fdc500;
+  --cyber-yellow: #ffd500;
+}
+
+body {
+  /* background-color: #fff9; */
+  background-image: url(../img/hero2.jpg);
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  font-family: "Nunito", sans-serif;
+  color: var(--dark);
+  padding-top: 2rem;
+}
+
+/*
+.navbar-toggle:focus:not(:focus-visible) {
+      outline: none;
+}
+*/
+
+a {
+  color: var(--royal-blue-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  background-color: var(--royal-blue-dark);
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+footer {
+  width: 100%;
+  height: 3rem;
+  font-size: 0.75rem;
+  background-color: #333;
+  color: #fff9;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline-color: var(--royal-blue-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+header {
+  background-color: var(--royal-blue-dark);
+  box-shadow: 0 0.25rem 0.25rem 0 #fff9;
+  color: var(--white);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 2rem;
+  padding-top: 0;
+}
+
+main {
+  min-height: 100vh;
+}
+
+textarea {
+  resize: none;
+}
+
+ul > li,
+ol > li {
+  margin-bottom: 0.5rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  /* background-color: #FFF6; */
+  background-color: #00519d9d;
+  color: #fff;
+  width: 100%;
+  margin: 2rem auto 0;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 25rem;
+  height: 20rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0.25rem var(--royal-blue-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
+.card * {
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  background-color: #fffb;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.especialidad,
+.osociales div {
+  margin-bottom: 0.5rem;
+}
+
+.especialidad h4,
+.especialidad h5,
+.especialidad span {
+  margin: 0 0 0.25rem;
+}
+
+.especialidad span {
+  display: block;
+}
+
+.formulario,
+.telefonos,
+.email,
+.mapa {
+  background-color: #00519dcc;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group > input[type="text"],
+.input-group > textarea,
+.input-group > input[type="email"] {
+  background-color: #fff; /*Si no se pone en algunos disposituvos el fondo es transparente*/
+  width: 100%;
+  min-height: 2rem;
+}
+
+.h1 {
+  position: absolute;
+  right: 9999px;
+}
+
+.icons-group {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.home .home-aside {
+  background-color: #fff5;
+  color: var(--royal-blue-dark);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.mapa iframe {
+  height: 300px;
+  margin-top: 1rem;
+}
+
+.mosaic {
+  width: 50%;
+  height: 50vw;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: auto;
+}
+
+.mosaics {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem auto;
+}
+
+.mosaic a {
+  color: #fff9;
+}
+
+.mosaic h4 {
+  margin: 0.5rem 0;
+}
+
+.mosaic .mosaic-content {
+  background-color: var(--usafa-blue);
+  width: 100%;
+  height: 100%;
+  /* padding: 1rem; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff9;
+  border-radius: 1rem;
+}
+
+.mosaic-text {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  text-align: center;
+  max-width: 75rem;
+  margin: auto;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  overflow-x: hidden;
+  font-family: "Unica One", "Nunito", sans-serif;
+}
+
+.navbar-brand a {
+  color: #fff;
+}
+
+.navbar-menu {
+  position: fixed;
+  width: 12rem;
+  left: -12rem;
+  bottom: 0rem;
+  transition: left 500ms;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-cornflower-blue);
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.navbar-menu-visible {
+  left: 0;
+}
+
+.navbar-menu li {
+  width: 100%;
+  text-align: center;
+  border-top: thin solid #fff7;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.navbar-menu a:link,
+.navbar-menu a:visited {
+  display: block;
+  padding: 1rem;
+  color: var(--white);
+}
+
+.navbar-menu a:hover,
+.navbar-menu a:active,
+.navbar-menu .active {
+  background-color: var(--royal-blue-dark);
+}
+
+.navbar-toggle {
+  position: fixed;
+  bottom: 3rem;
+  right: 1rem;
+  background-color: var(--royal-blue-dark);
+  border-radius: 50%;
+  padding: 0.5rem;
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.fa-check {
+  color: var(--royal-blue-dark);
+}
+.servicios p {
+  text-align: end;
+  font-weight: 600;
+}
+
+.telefonos span,
+.email span {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.titulo,
+.subtitulo {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-cornflower-blue);
+  text-shadow: 1px 1px 0 var(--dark);
+}
+
+.subtitulo {
+  margin-top: 1.5rem;
+}
+
+.servicios aside {
+  display: none;
+  background-color: var(--usafa-blue);
+  height: 200px;
+  width: 200px;
+  padding: 1.5rem;
+  margin: auto;
+  border-radius: 1rem;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.25rem;
+}
+
+.servicios aside a {
+  color: #fff9;
+}
+
+#staff,
+#cobertura {
+  padding-top: 2rem;
+}
+
+@media screen and (min-width: 30rem) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .mosaic .mosaic-content .icons-group {
+    font-size: 2.5rem;
+  }
+
+  .mosaic h4 {
+    font-size: 1.25rem;
+  }
+
+  .especialidades,
+  .osociales {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    max-height: 100vh;
+  }
+.osociales{
+  height: 50vh;
+}
+  .especialidades .especialidad,
+  .osociales div {
+    padding-right: 1rem;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .contacto .flex {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacto .flex .tel-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contacto .flex > * {
+    width: 45%;
+    max-width: 480px;
+  }
+
+  .especialidades,
+  .osociales {
+    max-height: 75vh;
+  }
+
+  .especialidades .especialidad,
+  .osociales div {
+    width: 33.33%;
+  }
+
+  .home {
+    flex-direction: row-reverse;
+  }
+
+  .home > * {
+    width: 50%;
+  }
+
+  .home .home-main {
+    padding-right: 1rem;
+  }
+
+  .mosaic-text {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  body {
+    padding-top: 3rem;
+    background-size: cover;
+  }
+
+  .mosaic {
+    width: 25%;
+    height: 15rem;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar-menu {
+    position: inherit;
+    flex-direction: row;
+    background-color: transparent;
+    width: auto;
+  }
+  .navbar-menu li {
+    border: none;
+  }
+
+  .navbar-menu a:link,
+  .navbar-menu a:visited {
+    padding: 1rem 0.5rem;
+  }
+
+  .navbar-menu a:hover,
+  .navbar-menu .active {
+    background-color: var(--dark-cornflower-blue);
+  }
+  .navbar-brand {
+    line-height: 3rem;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .servicios {
+    display: flex;
+    justify-content: space-between;
+  }
+  .servicios aside {
+    display: block;
+  }
+
+  .servicios div {
+    padding-right: 2rem;
+    max-width: 48rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .card {
+    width: 30%;
+  }
+}
